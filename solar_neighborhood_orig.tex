@@ -1,0 +1,656 @@
+\section{LSST Solar Neighborhood Collaboration Roadmap Planning Document }
+
+Adam Burgasser, John Gizis, Todd Henry, Sebastien Lepine, Michael Liu, Keivan Stassun 
+
+
+
+\subsection{Purpose of this Document }
+\begin{itemize}
+\item{Identify 
+the technical and scientific challenges for LSST in studying low mass stars and  the solar neighborhood }
+\item{Identify 
+tasks for collaboration members that can overcome these challenges on a  timescale of a few years. }
+\item{Organize 
+collaboration members to perform assigned tasks before data delivery }
+\end{itemize}
+
+
+\subsection{History }
+
+\begin{itemize}
+\item 22 October 2013 (AJB): Version 1 released to working group 
+\item 1 November 2013 (AJB): comments integrated and sent to leads 
+\item 2 January 2013 (AJB): comments from WIllman 
+\item 14 August 2014 (MCL): cleanup of edits 
+\end{itemize}
+
+\subsection{Introductory Material}
+
+\subsubsection{Key target populations:}
+\begin{itemize}
+\item{Solar 
+neighborhood: classically d $<$ 10-25 pc, extend to $\sim$100 pc in LSST era}
+\item{Young 
+stars: clusters, moving groups \& associations }
+\item{Old 
+stars: subdwarfs, thick disk and halo objects, globular clusters (??) }
+\item{Brown 
+dwarfs: $<$0.07 Msun, including free-floating planets }
+\item{White 
+dwarfs (and other remnants?) }
+\item{Binaries 
+and higher order multiples: q $>$ 0.1, resolved and unresolved}
+\item{Low 
+mass companions: q $<$ 0.1, resolved and unresolved }
+\end{itemize}
+
+\subsubsection{Definitions \& Acronyms used in the text}
+Mass scales: 
+\begin{itemize}
+\item{$>$ 
+2 Msun = “massive” }
+0.5-2 
+\item{
+Msun = “solar type” }
+\item{0.1-0.5 
+Msun = “low mass” (LM) }
+\item{$<$ 
+0.1 = “very low mass” (VLM) }
+\item{$<$ 
+0.07 Msun = “brown dwarf” (BD) }
+\item{$<$ 
+0.013 Msun = “planetary-mass object” (PMO) }
+\end{itemize}
+
+
+CPM = common proper motion  DBMM = deuterium burning minimum mass, nominally 0.013 Msun for solar Z  GC = globular cluster  HBMM = hydrogen burning minimum mass, nominally 0.07 Msun for solar Z  LBMM = lithium burning minimum mass, nominally 0.06 Msun for solar Z 
+[M/H] = metallicity 
+MF = mass function  MG = moving group  MS = main sequence star  NIR = near infrared  PM = proper motion  PMS = pre-main sequence star  RPM = reduced proper motion  RV = radial velocity 
+ SED = spectral energy distribution  SpT = spectral type  ToO = target of opportunity  WD = white dwarf  YA = young association  YMG = young ($<$100 Myr) moving group 
+
+\subsection{Roadmap Plan }
+\begin{itemize}
+\item{Phase 
+1 (deadline: 1 Nov 2013): Highlight technical/scientific challenges that must be  worked on to conduct our science with LSST. }
+\item{Phase 
+2 (deadline: TBD): Develop a strawman path towards overcoming those  challenges before LSST data start flowing. }
+\item{ Phase 
+3 (deadline: TBD): raise interesting precursor science that can be done by  you/can get grant support now. }
+\end{itemize}
+
+
+\subsection{Identified inputs required for planning (priorities TBD)}
+\begin{itemize}
+\item{precise 
+LSST filter definitions }
+\item{photometric 
+sensitivity per band for single and deep pointing }
+\item{astrometric 
+performance (proper motion \& parallax) per band as a function of 
+brightness, spectral type, \# of epochs, time baseline and sky location (see preliminary 
+results from DAWG = Differential Astrometry Working Group) }
+\item{LSST 
+imaging cadence(s) }
+\item{LSST 
+PSF shape model (including saturation) }
+\item{galactic 
+model }
+\item{ spectroscopic 
+followup resources }
+\item{theoretical 
+atmospheric models of LMs/VLMs/BDs as a function of {Teff, log g, [M/H], 
+clouds, circulation} that span LSST bands }
+\item{empirical 
+templates of sources (MLTY standards, subdwarfs and young dwarfs) }
+\item{evolutionary 
+models and forward modeling samples for BD population }
+\item{flare 
+emission model to determine LSST response/sensitivity to LM flares }
+\item{cloud 
+spot model to determine LSST response/sensitivity to BD weather patterns }
+\item{An 
+(updateable) list of currently nearby LMs/VLMs/BDs (ra, dec, spt, distance, predicted 
+LSST mags, age/cluster, etc) }
+\item{Quantification 
+of completeness as a function of SpT and distance }
+\end{itemize}
+
+\subsection{Primary science investigations: Objectives, issues and tasks}
+
+
+
+\subsubsection{Volume-complete (astrometric) sample of extended solar neighborhood }
+
+definition: all sources for which parallax measurements can be made with LSST  
+
+interested collaborators: 
+Adam Burgasser,
+John Gizis,
+Todd 
+Henry,
+Michael 
+Liu,
+Keivan 
+Stassun,
+Sebastien 
+Lepine.
+
+interface with other collaborations: 
+Galactic Structure and ISM: 
+
+objectives:
+\begin{itemize}
+\item distance-limited sample of solar neighborhood (to be defined) 
+\item 6D phase space determination (XYZUVW) 
+\item LM/VLM/BD MF determination 
+\item Full physical, atmospheric, multiplicity characterization of complete sample  
+\item map evolution of ultracool objects through the M/L, L/T, and T/Y transitions. 
+\end{itemize}
+
+
+issues: 
+\begin{itemize}
+\item number of epochs and cadence required to distinguish proper motion and parallax 
+\item overlap with GAIA (minimal/non-existent for L/T/Y dwarfs) 
+\item astrometric calibration and astrometric uncertainties 
+\item distance limit for completeness 
+\item brightness limit for completeness (e.g., astrometric accuracy vs. brightness) 
+\item detection of/contamination by astrometric binaries and unresolved binaries 
+\item followup spectroscopy: science goals \& data needs (sample size, resolution, etc.) 
+\item RV measurements 
+\item kinematics (statistical) ages? 
+\item handling crowding along Galactic plane (e.g. image differencing, pixel-level modeling) 
+\end{itemize}
+
+tasks to do: 
+\begin{itemize}
+\item{need 
+a current list of stars (perhaps broken down by SpT) w/in XX pc to assess where the 
+big holes in completeness are - both X and SpT regime that we care about will need to  be defined (Todd?), will require some “population synthesis” modeling for BDs (Adam?),  as well as kinematic considerations (Paul Thorman?) }
+\item{summarize 
+existing compliations from Pan-STARRS solar neighborhood work (Mike) }
+\item{model 
+astrometric binary contribution/contamination }
+\item{comprehensive 
+follow-up of sources - RV, high resolution imaging }
+\item{examine 
+model parameter sensitivity through LSST photometry }
+\item{Lists 
+of proper motion selected M dwarfs already exist to at least 100 pc. A local  kinematics model (velocity space distribution), combined with luminosity function, will  determine how many stars are missing from the current census as a function of  magnitude, and e.g. what the distance range of GAIA will be for stars of different  magnitudes. This will determine the “sweet spot” (in distance/luminosity) for LSST to  reap the most results. }
+\end{itemize}
+
+
+tasks completed: 
+
+\subsubsection{Deep sample of LM/VLM/BD dwarfs}
+
+definition: sources inaccessible to parallax  
+
+interested collaborators:  
+
+interface with other collaborations: 
+Galactic Structure and ISM: 
+The Galactic Bulge: 
+Near Field Cosmology: 
+
+objectives: 
+\begin{itemize}
+\item{extremely 
+large sample ($10^6$?) for population analysis }
+\item{galactic 
+stratigraphy - chemical abundances, kinematic “heating”, structural features 
+out to XX kpc }
+\item{galactic 
+scaleheight as a function of mass (constraint on potential and formation 
+mechanisms)} 
+\item{search 
+for thick disk/halo objects }
+\end{itemize}
+
+issues: 
+\begin{itemize}
+\item{spectroscopy 
+won’t be viable for whole sample - photometric selection criteria, RPM 
+(limits) }
+\item{most 
+sensitive filter likely to be Y(4): will single-band detections(+astrometry) be useful? }
+\item{limit 
+to which PM is viable }
+\item{metallicity 
+characterization through photometry alone }
+\end{itemize}
+
+tasks to do: 
+\begin{itemize}
+\item{simulate 
+yield along different sitelines, with variations in scale height, MF, etc. }
+\item{calibration 
+sample for metallicity effects  tasks completed: }
+\end{itemize}
+
+
+\subsubsection{Ultracold brown dwarfs (late-T and Y dwarfs)} 
+definition: BDs cooler than $\sim$1000 K => T5 and later, any distance  
+
+interested collaborators: 
+Adam Burgasser, Michael Liu 
+
+interface with other collaborations: 
+Galactic 
+Structure and ISM: 
+
+objectives: 
+\begin{itemize}
+\item{detect 
+a significant population of T and Y dwarfs for MF determination }
+\item{kinematic 
+characterization (6D phase space) }
+\item{identify 
+extreme TY populations (halo, young, cloudy, etc.) }
+\item{measure 
+how optical SEDs change across K$->$KCl, Na$->$NaCl/Na2S transitions }
+\end{itemize}
+
+issues: 
+\begin{itemize}
+\item{sensitivity 
+of LSST filters to cool T and Y dwarfs - detection limits, expected numbers 
+assuming an MF }
+\item{compare 
+expected performance to WISE. 
+e.g. LSST will not be competitive in this area, 
+at least for discovery of the coolest objects. }
+\item{most 
+sensitive filter likely to be Y(4): will single-band detections(+astrometry) be useful? }
+\item{possible 
+to spectroscopically follow these up? (necessary for classification, RV) }
+\item{minimal 
+information set required to eliminate contaminants (e.g., RPM, color sets, 
+necessary filters) }
+\end{itemize}
+
+tasks to do: 
+\begin{itemize}
+\item{examine 
+photometric classification and contamination}
+\end{itemize}
+
+tasks completed: 
+
+
+\subsubsection{Halo dwarfs across the substellar limit}
+
+definition: dwarfs with halo kinematics and/or $[M/H] \le -1$  
+
+interested collaborators: 
+Pat Boeshaar,  Adam Burgasser, John Gizis,  Michael Liu,
+Sebastien Lepine 
+
+interface with other collaborations: 
+Galactic 
+Structure and ISM: 
+
+objectives: 
+\begin{itemize}
+\item{Halo 
+mass function across substellar limit}
+\item{measurement 
+of H-burning “age gap” (z-dependent HBMM)}
+\item{confirmation 
+of BD formation in low metallicity environment}
+\item{metallicity 
+effects on low mass spectra/photometry }
+\item{multiplicity 
+of halo LM/VLM/BD dwarfs }
+\item{map 
+out velocity space distribution }
+\item{search 
+for substructure in LM halo }
+\item{discovery 
+of extremely metal poor ($[Fe/H] < -3$) VLM dwarfs }
+\item{Pop 
+III VLM dwarfs? }
+\end{itemize}
+
+issues: 
+\begin{itemize}
+\item{game 
+selection: target max V (anticenter and vertical ring) }
+\item{efficient 
+and robust selection: RPM, metallicity effects, contaminants}
+\item{mapping 
+LSST photometry to physical properties - templates? models?}
+\item{spectral 
+characterization? }
+\end{itemize}
+
+tasks to do: 
+\begin{itemize}
+\item{model 
+discovery rate using MF forward modeling + atmosphere models (colors) }
+\item{identify 
+templates for SED characterization }
+\item{estimate 
+the local density of halo subdwarfs and their expected magnitude/color 
+distribution, based on the existing census. }
+\item{Calculate the distance range over which LSST  will be detecting M subdwarfs of different subtypes, what can be expected of their  proper motion distribution, and determine the distance range required to assemble  statistically significant samples of various metallicity classes (i.e. halo sub-populations). }
+\end{itemize}
+
+tasks completed: 
+
+
+\subsubsection{Co-moving populations}
+
+definition: members of well-defined clusters, 
+young associations, and moving groups in the  Solar Neighborhood 
+
+interested collaborators: 
+Michael Liu, Keivan Stassun, Sebastien Lepine 
+
+interface with other collaborations: 
+Star 
+Clusters 
+
+objectives: 
+\begin{itemize}
+\item{complete 
+MFs for YAs/MGs in VLM/BD regimes }
+]tem{search 
+for new YAs/MGs, 
+associated with “isolated” stars or as completely new groups. }
+\item{identify 
+ultracool dwarf benchmarks over a broad range in age ($\sim$1 Myr to $\sim$1 Gyr) }
+\item{build 
+up sample of ultracool dwarf benchmarks (i.e. with well constrained ages, 
+compositions, distances) }
+\item{disk/jet/accretion 
+properties of young group members (e.g., TWA) }
+\end{itemize}
+
+
+issues: 
+
+\begin{itemize}
+\item{
+probability 
+of cluster membership: CPM, $\pi$/Dest, phot/spec properties, UV/X-ray, 
+variability?; are RVs necessary? }
+\item{how 
+to we obtained activity diagnostics to examine youth? (e.g., Halpha) }
+\item{Will 
+u photometry be sufficient to characterize UV emission excess? }
+\item{disentangling 
+multiple memberships (overlapping nearby groups) }
+\item{what 
+is lowest mass we can probe to in a given group? }
+\item{mapping 
+observations to physical properties (Teff, logg, masses, ages) }
+\item{mass 
+sensitivity limit for nearest GCs, older clusters (including age effects) }
+\item{The 
+young local pop will start to merge with ScoCen - how do we interface with the Star 
+Cluster subgroup?}
+\end{itemize}
+
+tasks to do: 
+\begin{itemize}
+\item{ determine 
+requirements on RV measurement for cluster association }
+\item{
+confirm 
+and compile properties of nearby YAs/MGs/GCs }
+\item{predict 
+mass limits for various groups }
+item{
+characterize 
+impact of disk/jet emission/envelope obscuration on LSST (+2MASS 
++WISE?) photometry, map color terms to physical measures}
+\end{itemize}
+
+tasks completed: 
+
+
+
+\subsubsection{VLM Multiples}
+
+definition: all multiples with a VLM/BD primary, including PMOs  
+
+interested collaborators: 
+Adam Burgasser,  Michael Liu
+
+interface with other collaborations  
+
+objectives: 
+\begin{itemize}
+\item{measure 
+the wide separation binary fraction and separation distribution via CPM }
+\item{measure 
+the small separation binary fraction via astrometric binaries }
+\item{detect 
+eclipsing binaries; if sufficient number, measure binary fraction at close 
+separations }
+\item{ use 
+these measurements to constrain separation and mass ratio distributions, binary 
+fraction all as a function of mass/SpT }
+\item{use 
+astrometric and transit binaries to determine orbital distributions (eccentricity, 
+mass ratio) }
+\item{use 
+transit binaries to test VLM/BD structure models }
+\item{robustly 
+determine higher-order fractions for LM/VLM/BDs }
+\item{measure 
+planetary companion fraction to VLM/BDs }
+\end{itemize}
+
+issues: 
+\begin{itemize}
+\item{what 
+is the transit detection rate for various cadences? what cadence would optimize? }
+\item{what 
+are the astrometric requirements for CPM assessment as a function of {binary 
+separation, distance, mass ratio}? }
+\item{how 
+can color/photometry winnow candidates for wide binaries? }
+\item{how 
+reliable is photometric information for constraining mass ratios? separate question 
+for */*, */BD and BD/BD pairs }
+\item{what 
+constraints can wide VLM binaries have on DM distribution? }
+\end{itemize}
+
+tasks to do: 
+\begin{itemize}
+\item{ensitivity 
+limits for these three cases }
+\item{simulate 
+discovery fraction and efficiency for each class of systems (simulations of 
+population, detectability for eclipsing/astrometric/resolved binaries) }
+\item{interface 
+astrometric requirements with halo PM, parallax requirements }
+\item{false 
+positive simulation for wide binaries }
+\item{RV 
+followup of astrometric, transit binaries }
+\item{ compile 
+specific predictions of VLM formation models on binary stats (e.g., co-ejection 
+for wide multiples) }
+\item{ model 
+wide separation limits due to DM substructuring, differential tests with massive, 
+LM, \& VLM wide binary distributions}
+\end{itemize}
+
+tasks completed: 
+
+
+
+\subsubsection{VLM/BD companions to stars}
+
+definition: resolved LM/VLM/BD/PMO companions to stars 
+
+interested collaborators: 
+Michael Liu  
+
+interface with other collaborations:  
+
+objectives: 
+\begin{itemize}
+\item{measure 
+the companion fraction at low q to various stellar types }
+\item{characterize 
+“BD desert” at wide separations }
+\item{build 
+up sample of ultracool dwarf benchmarks (i.e. with well constrained ages, 
+compositions, distances) }
+\item{test 
+brown dwarf evolutionary models and model atmospheres using benchmarks }
+\item{identify 
+wide companions to planet-hosting stars (Kozai mechanism) }
+\end{itemize}
+
+issues: 
+\begin{itemize}
+\item{confirmation: 
+CPM (limits), color, other? }
+\item{how 
+to deal with saturated primaries }
+\item{ what 
+is the companion volume sampled as a function of separation (distance effects)?}
+\item{what 
+is the minimum resolving angle? }
+\item{sensitivity 
+as a function of angular separation from a star and brightness? }
+\item{how 
+to account for orbital alignments in detectability, separation distribution }
+\item{ defining robust search samples - PM-selected? }
+\end{itemize}
+
+
+tasks to do: 
+\begin{itemize}
+\item{simulate 
+discovery fraction with various assumptions of companion fraction, separation 
+distribution, orbital properties }
+\item{CPM limits }
+\item{define 
+input search sample; resources to characterize primaries }
+\item{contamination 
+rate as a function of separation (w/ \& w/o CPM confirmation) }
+\item{resources for follow-up }
+\end{itemize}
+
+
+tasks completed: 
+
+
+\subsubsection{Magnetic, atmospheric and structural photometric variability in cool dwarfs}
+
+definition: analysis of photometric variability associated with magnetic and atmospheric  phenomena (separating off eclipses/transits) 
+
+interested collaborators: 
+John Gizis,  Keivan Stassun 
+
+interface with other collaborations: 
+transients and variables working group  
+
+objectives: 
+\begin{itemize}
+\item{characterize 
+period distribution of VLM dwarfs }
+\item{characterize 
+flaring rate and flare energy distribution of M and L dwarfs }
+\item{characterize 
+spot properties: covering fraction, Tspot-Tphot }
+\item{distinguish 
+between magnetic emission mechanisms (spots/aurorae) }
+\item{characterize weather-related phenomena }
+\end{itemize}
+
+
+issues: 
+\begin{itemize}
+\item{relation 
+of (lower-precision) LSST results to (higher-precision) Kepler \& TESS results? }
+\item{cadence 
+necessary for typical flare and rotation rates }
+\item{what 
+follow-up is required to characterize flares and/or quiescent emission? }
+\item{Will 
+targets of opportunity be needed to catch flares in action (is there even time to do 
+this? what can we learn from GRB community?) }
+\item{ photometric 
+precision required for detection of X\% spot/cloud var }
+\item{ what 
+different bands sample in terms of cloud and flare properties }
+\item{how 
+could multi-color photometry constrain properties of flare source }
+\item{can 
+multi-color photometry constrain cloud properties (e.g., grain size distribution)}
+\item{follow 
+up to directly measure magnetic activity indicators (RAVE?) }
+\end{itemize}
+
+tasks to do: 
+\begin{itemize}
+\item{ use 
+a list/database of currently known VLMs within X pc, and use this as in input catalog 
+to see what the cadence of these sources would be. }
+\item{model 
+flares in LSST photometric bands as function of flare temperature }
+\item{predictions 
+of “magnetic” variability for spot vs. auroral models }
+\item{model 
+cloud variability in LSST photometric bands as function of v sin i, covering 
+fraction, Tcloud-Thole, viewing angle, latitude distribution, differential rotation }
+\item{discovery 
+rate of flares for a given flare rate/energy model and cadence }
+\end{itemize}
+
+tasks completed 
+
+
+\subsubsection{White dwarfs}
+
+definition: all degenerates, including those not identified by parallax  
+
+interested collaborators: 
+Sebastien Lepine 
+
+interface with other collaborations: 
+Galactic 
+Structure and ISM  
+
+objectives: 
+\begin{itemize}
+\item{identify and characterize halo WD population }
+\item{characterize 
+the luminosity function across populations }
+\item{identify 
+main-sequence + WD binaries }
+\end{itemize}
+
+issues: 
+\begin{itemize}
+\item{Are u-g/g-r colors sufficient to identify most field white dwarfs? }
+\item{To 
+what extent will the search for WDs have to rely on proper motions (i.e. reduced 
+proper motion detection). }
+\item{How 
+efficiently can WD+MS binaries be identified based on color alone? }
+\end{itemize}
+
+tasks to do: 
+\begin{itemize}
+\item{Calculate the local WD density based on the current census, and estimate how many 
+WD can potentially be detected by LSST as a function of magnitude. }
+\item{Build 
+expected color-magnitude distributions based on predicted luminosity functions. }
+\item{Estimate 
+proper motion detectability of halo WDs, how deep one needs to go to 
+assemble a statistically significant sample.}
+\end{itemize}
+
+tasks completed: 
+
+
+

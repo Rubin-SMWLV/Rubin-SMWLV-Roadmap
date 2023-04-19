@@ -1,0 +1,119 @@
+\documentclass[12pt]{article}
+\usepackage{times}
+\usepackage{geometry}
+\geometry{letterpaper, portrait, margin=1in}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem,amssymb}
+\usepackage{ragged2e}
+\usepackage{natbib}
+\usepackage{graphicx}
+\newlist{thematic}{itemize}{8}
+\setlist[thematic]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+\usepackage{amsmath}    % Advanced maths commands
+\usepackage{amssymb}    % Extra maths symbols
+
+
+\def\aj{\rm AJ}
+\def\araa{\rm ARA\&A}
+\def\apj{\rm ApJ}
+\def\apjl{\rm ApJ}
+\def\apjs{\rm ApJS}
+\def\ao{\rm Appl.~Opt.}
+\def\apss{\rm Ap\&SS}
+\def\aap{\rm A\&A}
+\def\aapr{\rm A\&A~Rev.}
+\def\aaps{\rm A\&AS}
+\def\azh{\rm AZh}
+\def\baas{\rm BAAS}
+\def\jrasc{\rm JRASC}
+\def\memras{\rm MmRAS}
+\def\mnras{\rm MNRAS}
+\def\pra{\rm Phys.~Rev.~A}
+\def\prb{\rm Phys.~Rev.~B}
+\def\prc{\rm Phys.~Rev.~C}
+\def\prd{\rmPhys.~Rev.~D}
+\def\pre{\rm Phys.~Rev.~E}
+\def\prl{\rm Phys.~Rev.~Lett.}
+\def\pasp{\rm PASP}
+\def\pasj{\rm PASJ}
+\def\qjras{\rm QJRAS}
+\def\skytel{\rm S\&T}
+\def\solphys{\rm Sol.~Phys.}
+\def\sovast{\rm Soviet~Ast.}
+\def\ssr{\rm Space~Sci.~Rev.}
+\def\zap{\rm ZAp}
+
+\begin{document}
+\begin{center}
+\includegraphics[width=1.0\textwidth]{milkyway.jpg}
+\vspace{1.0in}
+
+\huge
+LSST Stars, Milky Way, and Local Volume Science Roadmap
+\linebreak
+\linebreak
+\normalsize
+{\bf Version v1.0}
+\linebreak
+{\bf Date: \today}
+\end{center}
+
+\pagebreak
+
+\begin{table}[h]
+\caption{Change Record}
+\begin{center}
+\label{tab:changerecord}
+\begin{tabular}{|l|l|l|l|}
+\hline 
+\textbf{Version} & \textbf{Date} & \textbf{Description} & \textbf{Owner name} \\
+\hline 
+v1.0 & 20 November 2019 & Start of major rewrite & Peregrine McGehee \\
+v0.1 & 19 June 2019 & Ingest of SWG roadmaps & Peregrine McGehee \\
+\hline 
+\end{tabular}
+\end{center}
+\end{table}
+
+\pagebreak
+
+
+\tableofcontents
+
+\pagebreak
+
+\include{executive_summary}
+\include{introduction}
+\include{key_science}
+\include{enabling_analysis}
+\include{pipelines}
+\include{datasets}
+\include{deliverables}
+\include{research_and_development}
+\include{appendices}
+\include{references}
+
+The following sections are copies of the material created by each working group during the 2013-era 
+roadmap initiative.
+
+
+\include{bulge_orig}
+\include{clusters_orig}
+\include{galactic_structure_orig}
+\include{nfc_orig}
+\include{magellanic_orig}
+\include{solar_neighborhood_orig}
+\include{variables_orig}
+
+
+
+% Please do not modify or delete this line.
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

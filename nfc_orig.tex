@@ -1,0 +1,77 @@
+\section{LSST Near Field Cosmology Roadmap}
+
+The LSST Near Field Cosmology subgroup focuses on using stellar substructure throughout the Milky Way
+ and Local Volume as a probe of the underlying CDM cosmology. 
+This includes searches for dwarf galaxies, tidal streams and other coherent features in 
+phase space using the properties of individual stars. 
+Examples include searches for ultra-faint galaxies based on overdensity of main sequence stars, 
+searches for substructure using RR Lyrae variables, or searches for moving stellar groups using proper motions. 
+
+Searches for Milky Way substructure will allow critical new constraints in several areas. 
+A more complete census and map of the distribution of satellites around the Milky Way sheds 
+light both on the formation of satellite systems and the nature of dark matter halos that are 
+able to host such low-mass galaxies.
+ Finding tidal debris beyond 100kpc and out to the virial radius of the Milky Way will open a 
+window on the more recent accretion history of the Galaxy, as well as the accretion of objects 
+on more radial orbits in particular. 
+Debris in the outer Galaxy also promises a powerful new probe of the mass 
+distribution around the Milky Way in regions of a dark matter halo that have been largely 
+unexplored for any galaxy in the Universe. 
+
+
+\subsection{Overview of LSST NFC Science Goals}
+\begin{itemize}
+\item Mapping Milky Way substructure, including dwarf galaxies and stellar streams using main 
+sequence stars out to $\sim$300kpc 
+\item Map of Milky Way substructure using more luminous tracers (BHB, RRL) out to 800 kpc 
+\item Search for substructure in tangential velocity field out to 25 kpc 
+(60 km s$^-1$ precision). 
+\end{itemize}
+
+\subsection{Scientific and Technical Issues}
+
+We discuss below issues that go beyond the LSST design specifications. 
+\begin{enumerate}
+\item{StarGalaxy Separation: For apparent magnitudes beyond $r\sim22$, the number of unresolved
+ galaxies relative to stars rises dramatically. StarGalaxy separation is critical and 
+improvements in StarGalaxy separation will likely have 
+the most significant influence on the degree to which the above
+ science goals are achieved. 
+
+StarGalaxy separation will be done using both color and morphological criteria. 
+There is general consensus that these two type of criteria remain separate in the 
+LSST catalogs, allowing users to combine them in different ways for different science goals. 
+combined for specific science goals. There is a desire to see as many measures relevant to
+StarGalaxy separation as possible. Preferably as a probability, or some index like ($\chi^2, \nu$)
+ that is transformable to probability. }
+
+\item{AllSky Query Capability: Search for Milky Way substructure, particularly tidal streams, 
+may be one of the few sciences cases that requires full survey data access and cannot be 
+accomplished on smaller data chunks. This is unlikely to be possible in SQL on LSST servers. 
+An SDSSLike Casjobs interface is both necessary and sufficient for this. }
+
+\item{Variable Stars: The NFC group is primarily interested in RR Lyrae, but additional variable 
+stars include W UMa stars, $\delta$Scuti, Miras and Cepheids are of interest. 
+There was general agreement that current LSST cadance is sufficient for these searches.
+ Important flags to search for variable stars include the Stetson J, K, and L indices, as well as the
+ median magnitude, skewness, kurtosis, von Neumann index, and linear fits to magnitudes vs. time.}
+
+\item{Flags for diffraction spikes, ghosts, etc: 
+Searches for substructure depend critically on photometric uniformity. 
+Need to have a catalog flag indicating the degree to which a source may be a 
+product of (or affected by) diffraction spikes or ghosts. 
+It is important that these flags are provide for each data epoch.}
+
+\item{Proper Motion Flags: 
+Both straightline measurements as well as with parallax folded in, with a 
+$\chi^2$ for each. 
+This would be good both to identify nearby stars as well as improve 
+reliability of the proper motions of distant stars with too many fitting parameters. }
+
+\item{Completeness Estimates: Many NFC science goals will require estimates of the sample
+ completenesses as a function of magnitude for point sources in each color, at every position on the sky.
+ This involves artificial star tests over an appropriate range of seeing, crowding, 
+and for the appropriate number of exposures that go into each data release's average 
+photometry. This will be particularly true for coadded data products.}
+\end{enumerate}
+

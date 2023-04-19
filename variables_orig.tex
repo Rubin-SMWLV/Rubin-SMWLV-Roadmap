@@ -1,0 +1,127 @@
+\section{Roadmap for the Variable Stars subgroup of the LSST Stars, Milky Way, and Local Volume Working Group }
+
+Joshua Pepper (Lehigh University) and Leslie Hebb (Hobart and William Smith Colleges) 
+
+\subsection{Context }
+
+The science of variable stars is effectively split between the Transients \& Variable Stars ( T/VS) Work- ing Group and the Stars, Milky Way, and Local Volume (S/MW/LV) Working Group. This subgroup will serve as a bridge between the two Working Groups to maintain a focus on this important scientific area. 
+
+\subsubsection{Collaboration with Transients \& Variable Stars Working Group }
+
+One of the key questions about our subgroup is what science will be primarily covered by the S/MW/LV group versus the T/VS group. In general, extragalactic transients like supernovae and GRBs will be dealt with by the T/VS. That still leaves eclipsing, rotational, pulsating, and flaring stars. So far most of the work on pulsating stars (i.e. RR Lyrae) has taken place within the T/VS group, and so we will only briefly discuss such variables in this roadmap. However, we should remain careful to prevent any scientifically interesting variable type from falling through the cracks between the two working groups. 
+
+\subsubsection{Classification of Variables }
+
+A very broad issue that both Working Groups (T/VS and S/MW/LV) will have to deal with is the nature of LSST classification. No science can be accomplished in the area of variable stars unless we resolve the question of how the LSST pipeline will classify the enormous variety of variable stars, and at what level. Will stars be simply identified as Variable or Not Variable based on some confidence level of a given statistical test? Or will the classification go deeper, into identifying stars as periodically versus non- periodically variable, or even further into sorting them into specific categories, such as eclipsing, pulsating, etc.? This is arguably the single most important question for variable star science with the LSST. There are existing efforts to approach this problem, including the EB Factory project (Stassun et al. 2013) at Vanderbilt University1, and efforts led by Josh Bloom (Bloom et al. 2012). However those efforts will have to be more fully developed for the variable star science goals of LSST. Current variability surveys such as the Palomar Transient Factory and the Catalina Sky Survey offer precursor data sets that can be used for testing classification methods. 
+
+We have included in this document the basic science questions that we hope to address with LSST, many of which were included in the Science Book. The majority of these science questions require large populations of the following variability types: 
+\begin{itemize}
+\item Eclipsing binaries 
+\item Rotational variables 
+\item Flaring stars 
+\item Transiting Exoplanets 
+%%http://www.vanderbilt.edu/AnS/physics/vida/ebfactory.htm 
+\item Non-periodic variables 
+\item Pulsating stars (including RR Lyrae, Cepheids, etc.) 
+\item Serendipitous variables 
+\end{itemize}
+
+Each science area has a set of technical questions that need to be answered or criteria that need to be met in order to achieve the stated aims. In general, we need to understand the technical capabilities of the LSST pipeline, the various limits on the data and the tools available for analysis. 
+
+\subsubsection{Stellar Properties }
+Additionally, what information will
+ be provided by the default LSST stellar characterization process? Will the system only provide LSST coordinates, magnitudes, and colors for stars, or will any effort be made to extrapolate effective temperatures or other properties, even at a crude level? Especially important will be the incorporation of data from previous catalogs, including SDSS, 2MASS, and GAIA into the LSST catalog. 
+That being said, we have listed below specific questions related to different types of variable stars. Many of the issues raised in the first section, eclipsing binaries, are broadly relevant for all variability types. 
+
+\subsection{Technical questions needing answers}
+\subsubsection{Eclipsing binaries }
+\begin{itemize}
+\item{Eclipsing binary classification: Are variability classifications being made by the LSST software? How detailed and reliable will that classification software be? What level of detail will be provided (i.e. eclipsing versus pulsating variable, or down to determination of detached or contact EBs?) }
+\item{Photometric precision: What will be the per-exposure and per-visit photometric precision of the observations as a function of apparent magnitude for all filters? The details are especially at the bright end and faint end. }
+\item{Spectroscopic follow up: How many EBs will be bright enough to follow up spectroscopically? What resources are required to derive masses for these systems, and how will that effort be organized? Does a prioritization system need to be developed? }
+\item{Clusters targeted by LSST: What known open clusters, globular clusters, and young associations will LSST target? Coordination with the S/MW subgroup on clusters to determine the list of probable cluster members. Do we need to set up a system to investigate these cluster stars specifically? }
+\item{Photometric precision in crowded regions: What are the effects of crowding expected to be on photometric precision and the ability to confidently identify sources of variability? }
+\end{itemize}
+
+\subsubsection{Rotational variables }
+\begin{itemize}
+\item Same technical questions as EBs 
+\item{Long-term systematics: It will be important to investigate what possible long-term systematics might be present in the LSST photometry at the relevant periods. }
+\end{itemize}
+
+That includes especially diurnal and monthly timescales, since the non-continuous photometry means that we need to be concerned about identifying period aliasing. 
+
+\subsubsection{Flaring stars }
+\begin{itemize}
+\item{Reliability of the uncertainties on individual data points: Properly identifying flare events and distinguishing them from non-astrophysical sources (like cosmic rays) will be crucial. Therefore, having reliable uncertainties that are realistic and believable for all data points is important. How do we achieve this? }
+\end{itemize}
+
+\subsubsection{Transiting Exoplanets }
+\begin{itemize}
+\item{Photometric precision even more important: Photometric systematics will be an even bigger prob- lem for transit detection that EB detection. While the long gap between subsequent observations will make red noise less of a concern, it should still be examined and characterized. }
+\item{Understanding the uncertainties: The small number of in-transit observations from an LSST light curve will necessitate a great deal of confidence in every observation, so the LSST systematic noise in every filter must be carefully characterized. }
+\item{Cadence and total number of data points: Which fields will have enough data points to detect exoplanets? Will there be sufficient observations of the regular survey field or are the deep drilling fields the only ones of relevance? Simulations will be required to determine this. }
+\end{itemize}
+
+\subsubsection{Non-periodic variables }
+\begin{itemize}
+\item{ Real-time alerts: A question for those interested in such cases is whether LSST will provide alerts regarding the possible beginning of major, previously unknown eclipsing or brightening events to allow other telescopes to target these objects in real time. }
+\end{itemize}
+
+\subsection{Science Questions: Detailed}
+\subsubsection{Eclipsing Binaries }
+
+According to simulations by Prsa et al. (2011), LSST will observe $\sim$24 million EBs over the course of the mission. For $\sim$28\% (or 6.7 million), LSST photometry alone can be used to characterize the system. The properties derived from the LSST photometry alone are Period, T2/T1, (R1 +R2)/a), ecos($\omega$), esin($\omega$), and sin(i). However, the vast majority of targets will be too faint for spectroscopic follow up. Therefore, no mass information will be available for these systems. 
+
+The analysis by Prsa et al. (2011) was preliminary, using an early version of the OpSim, without the deep drilling fields, and without an analysis of the multiband photometric capabilities of LSST. It also employed a crude method for detecting binary periodicities, and was not tested for false-positive results. It should therefore be updated in a number of ways. 
+
+The primary value of LSST for EB science is threefold. The enormous numbers of EBs detected will permit thorough statistical analysis of EB properties across a number of stellar populations. It will also permit the detection of very rare or extreme systems. Previous studies such as Raghavan et al. (2010) or Pojmanski et al. (2005) typically include at most tens of thousands of EBs, so the LSST EB catalog will include objects three orders of magnitude rarer than those known. 
+
+LSST will enable the astronomy community to probe the following stellar populations: (1) Open clus- ters and young associations, (2) Extremely metal-poor or metal-rich populations, including the thick disk 
+and the Halo, (3) Certain populations in the LMC and SMC, (4) Globular clusters, (5) Low-mass stars, and (6) Brown Dwarfs. 
+
+With access to the populations listed above, LSST will permit astronomers to examine questions such as: 
+\begin{itemize}
+\item EB period distribution within and across the populations. 
+\item Evolution of binary fraction. 
+\item Fundamental stellar properties for the bright end of the discovered EBs, testing structure and evolutionary models. 
+\end{itemize}
+
+\subsubsection{Rotation periods of stars }
+
+Gyrochronology is becoming a mature discipline for age determinations of stars. Rotational modula- tion may be detected by LSST for stars in clusters or other populations that have as yet been too faint for gyrochronological analysis. 
+
+\subsubsection{Flare stars }
+
+The SDSS and Kepler flare studies can be replicated to an extent with LSST. 
+
+\subsubsection{Exoplanets }
+
+There is some potential for LSST to discover large numbers of transiting exoplanets (Beatty \& Gaudi 2008). There is both enormous potential in this area but also tremendous difficulties. In general, the LSST photometric precision will only allow the detection of gas giant planets, and effectively none of the stars observed by LSST will be bright enough for radial velocity confirmation. Furthermore, there will be huge numbers of false positives. 
+
+On the other hand, if these difficulties can be managed, statistical analysis would allow the discovery of planets in many of the stellar populations described in the EB section above. Of particular interest would be low-metallicity populations, very low-mass stars and brown dwarfs, and potentially even extragalactic populations such as the LMC. Even tentative discoveries, if carefully considered, can provide insight into planet formation and evolution mechanisms (see http://arxiv.org/abs/1302.6244). 
+
+One intriguing possibility is that some number of tentative LSST planet detections can be followed up via ground-based photometric tools (see an analysis of that possibility in Dzigan \& Zucker (2013)). Also, even though the stars will be too faint for RV confirmation of the planetary orbits, low-precision RV can help eliminate false positives and determine some host star properties. However, just how many resources would be needed, even for a sliver of the LSST transit candidates? That question must be addressed. Also, statistical validation of LSST transit candidates will require a tool similar to the BLENDER method developed for Kepler, but extensively adapted for LSST. 
+
+\subsubsection{Non-periodic variables }
+
+In addition to the broad categories of supernovae and GRBs, there are other types on non-periodic variability worth investigating. Flare stars are one type, and another is apparently singular, non-repeating 
+eclipse events. Cases of those have been observed a number of times in the past, but their non-repeating nature complicates efforts to understand them. However, some recent detections, especially Mamajek et al. (2012) and Rodriguez et al. (2013), suggest that these events hold a great deal of promise, providing insight into star formation, binarity, and exoplanets. 
+
+\subsubsection{Pulsating Stars }
+
+As stated at the beginning of this document, it appears that the T/VS working group is taking the lead on covering pulsating stars. That certainly includes categories of perennial interest, such as Cepheids and RR Lyrae. It will be the responsibility of this subgroup to take the lead to liaise with the T/VS working group to convey information between the working groups and seek cooperation, and also to ensure that no variable type of interest is ignored. 
+
+\subsubsection{Serendipity and the Unknown }
+
+Finally, an unprecedented survey like LSST will inevitably discover some kinds of new and completely expected phenomena. We should plan for such discoveries in whatever way practical. Most importantly, the native classification tools that LSST ends up employing must be prepared to recognize objects whose variability does not fit into any known category and set them aside for further investigation. Crucially, the system must be tuned so as to not overwhelm the community with slight variations on known object types, but not to be so stringent as to miss potentially exciting discoveries. The process will certainly require extensive testing and optimizing, but one of the crucial early steps in such a process will have to be the assembly of all types of known variability, both to aid the classification process and to define the regime of “unknown”. It will be necessary to work closely with the LSST OpSim and ImSim teams to explore this task. 
+
+%%REFERENCES Beatty, T. G., & Gaudi, B. S. 2008, ApJ, 686, 1302 
+%%Bloom, J. S., Richards, J. W., Nugent, P. E., et al. 2012, PASP, 124, 1175 
+%%Dzigan, Y., & Zucker, S. 2013, MNRAS, 428, 3641 
+%%Mamajek, E. E., Quillen, A. C., Pecaut, M. J., et al. 2012, AJ, 143, 72 
+%%Pojmanski, G., Pilecki, B., & Szczygiel, D. 2005, Acta Astron., 55, 275 
+%%Prsˇa, A., Pepper, J., & Stassun, K. G. 2011, AJ, 142, 52 
+%%Raghavan, D., McAlister, H. A., Henry, T. J., et al. 2010, ApJS, 190, 1 
+%%Rodriguez, J. E., Pepper, J., Stassun, K. G., et al. 2013, AJ, 146, 112 
+%%Stassun, K., Paegert, M., De Lee, N. M., & Cargile, P. 2013, American Astronomical Society Meeting Abstracts, 221, #116.01 

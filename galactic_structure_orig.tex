@@ -1,0 +1,66 @@
+
+\section{Notes towards a roadmap for the Galactic Structure and ISM sub-group}
+
+We have identified three major topics that came out of discussions among the Galactic Structure and ISM subgroup members. We present a number of specific questions that our subgroup would like addressed by the larger collaboration and/or project as well as some specific projects/goals that our subgroup plans to address over the next year. 
+
+\subsection{Crowded field photometry}
+
+Technical overview: The stated limit from the project for the LSST processing is 200 stars/arcmin$^2$,
+or 0.056 stars/arcsec$^2$. 
+Given that the median seeing at Cerro Pachon is 0.7 arcsec FWHM, the effective beam size is i
+$\pi$ * (0.7/2.35)$^2$ = 0.28 arcsec$^2$. 
+
+Thus the proposed LSST limit is at 64 beams / source, or at $\sim$half the 30 beams / source confusion limit.
+ 
+Implications for Galactic Structure science: 
+\begin{enumerate}
+\item In what fields do we hit the proposed limit and the confusion limit as a function of band and Galactic coordinates for a single 15-second exposure? Action: We propose to organize an effort to estimate these values based on empirical data rather than simulated data, the latter of which are based on extrapolations. 
+\item What are the Galactic Structure science goals that require the fields having densities greater than
+ 200 stars/arcmin$^2$ but less than the confusion limit? Action: This depends on how many fields are above that and where they are. 
+\item What model does ImSim use to create the Galactic Disk and Bulge stellar populations? Has this been tested at, e.g. low Galactic latitudes? Action: We can actually correct the ImSim using results from (1). 
+\end{enumerate}
+
+\subsection{Astrometry [feedback from the DAWG]}
+
+The following questions came from members of the sub-group – we summarize the most important aspects of them in hopes of geting answers/feedback from the project: 
+\begin{enumerate}
+\item Will the project assume responsibility for crowded field photometry and astrometry software? 
+\item Regardless of the project's support for crowded fields, should the science collaborations investigate alternative algorithms? 
+\item Should there be (or is there already) an ensemble of ImSims upon which the science collaboration members can try their algorithm and then compare their results against the “truth” (inputs to ImSim)? 
+\item What are the mechanisms for ensuring that certain features/capabilities are part of ImSim, the photometric pipeline or other project-wide software/tools? 
+\end{enumerate}
+
+Specifically, one of our members (D. Monet) reports that astrometric studies show that the ImSim does not
+mimic real data and that the astrometric errors grows as a function of separation. 
+Also, the generation of 20 simulations that differ by only the seed used for the random number generator
+ results in changes in the sky background of a factor of 30. 
+They go from 0.1 to 3 times the value listed in the SRD. 
+
+\subsection{Y4-band}
+ There was some discussion in our sub-group about the performance of the y-band filter. 
+Specifically, some users were concerned about the ability to calibrate out water vapor. 
+Some of the specific cases where this may be important have clear overlaps with the low-mass star 
+(and other) sub-groups but we summarize some of the discussion and specific questions below. 
+
+The main science cases that came up were motivated by the need for creating a color calibration of the 
+M dwarf photometric metallicity scale and the identification of cool subdwarfs with the y-filter in 
+combination with griz. These calibrations could directly lead to examining the distribution and scale 
+height of M dwarfs as a function of metallicity and potentially probe the contribution from 
+extragalactic streams and/or other halo object. 
+
+Potential Issues with the y-band filter: 
+\begin{enumerate}
+\item{Water vapor – an unresolved problem in the y4-filter is the highly time variable effect of water vapor 
+and whether it can be removed – and if so, at what precision. 
+
+Action: Members of our sub-group were curious if there exist time series spectra that would allow our sub group (or in tandem with others) to assess how easily the y4 band can be calibrated and what the empirical solution is to this concern. If these data don't exist, are there plans/ability to acquire these data? 
+If the data do exist then one of our sub-group’s action items will be to investigate the calibration and precision of the y-band filter (see (2)). }
+
+\item{Metallicity calibration and identification of low-mass subdwarfs – our sub-group is committed to 
+assessing how the y-filter (irrespective of (1)) will affect identifying and classifying the very 
+metal poor halo M dwarfs accurately (disentangling temperature and abundance effects) as well as creating a useable photometric metallicity scale. The current SDSS gri color-color diagrams show significant overlap among metallicity classes of low-mass stars. And while most of the SDSS objects have spectroscopy, almost all of the extremely faint LSST stars will not. 
+
+Action: Our sub-group has identified a number of questions that will lead some of our effort of the next year. These include (but are not limited to): Is there any way to increase the photometric accuracy in the classification and identification of metal-poor, low-mass stars? What are the quantitative limits to our precision with the current LSST setup (including the y4 filter)? Are there other observations that we can persue that might help answer these questions? Members of our sub-group have done some modeling using existing spectra. However, there are limited data for the coolest, lowest mass, and most extreme subdwarfs. These extreme stars are the ones near the hydrogen-burning limit that will ultimately tell us about the bottom of the mass function in the early history of the Galaxy. 
+Therefore, one additional action item is to acquire additional low-mass subdwarfs to continue modeling LSST photometric products. }
+\end{enumerate}
+
